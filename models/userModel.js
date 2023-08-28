@@ -39,4 +39,5 @@ const SignupinSchema = new mongoose.Schema({
  
 
 });
+  SignupinSchema.plugin(passportLocalMongoose,{usernameField:"email"}); //
   module.exports = mongoose.model('Signupin',SignupinSchema);

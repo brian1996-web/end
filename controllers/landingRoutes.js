@@ -3,9 +3,9 @@ const router = express.Router();
 
 
 //hello route
-router.get('/sections', (req, res) => {
-  res.render('sections.pug');
-});
+// router.get('/sections', (req, res) => {
+//   res.render('sections.pug');
+// });
 
 // landing page route
 router.get('/landing', (req, res) => {

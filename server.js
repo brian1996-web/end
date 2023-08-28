@@ -20,6 +20,8 @@ const formRoutes = require('./controllers/formRoutes');
 const dashboardRoutes = require('./controllers/dashboardRoutes');
 const userRoutes = require('./controllers/userRoutes');
 const sectionsRoutes = require('./controllers/sectionsRoutes');
+const truckRoutes = require('./controllers/truckRoutes');
+const landingRoutes = require('./controllers/landingRoutes');
 
 
 
@@ -68,6 +70,9 @@ app.use('/api', userRoutes);
 
 app.use('/api', sectionsRoutes);
 
+app.use('/api', truckRoutes);
+
+app.use('/api', landingRoutes);
 
 
 

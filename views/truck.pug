@@ -1,0 +1,100 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='../css/signup.css')
+  title Create an Account
+section.section-cta
+  .container
+    .cta
+      .cta-text-box
+        p.heading-secondary Parking Form
+      
+          
+        form#formsignup.cta-form(name='truckform' method="POST" action='/api/regtruck'  style="padding-left:60px;" onsubmit='return Validate(event);')
+          // action=# takes data to the backend
+          div
+            div
+              label(for='firstname') First Name 
+              input#firstname(type='text' name='firstname' placeholder='James ')
+              span#FnameError.organize
+            div
+              label(for='lastname') Last Name
+              input#Lastname(type='text' name='lastname' placeholder=' Milner')
+              span#LnameError.organize
+            div
+              label(for='username') Username
+              input#Username(type='text' name='username' placeholder=' Milner')
+              span#UsernameError.organize
+            div
+              label(for='email') E-mail
+              input#email(type='text' name='email' placeholder='XXX@mail.com')
+              span#emailError.organize
+            div
+               label.form-label(for ="role") Section
+               select(name="role") 
+                    option(value=" ") Select section
+                    option(value=" Trucks") Trucks 
+                    option(value=" Personal Cars") Personal Cars
+                    option(value=" Taxis") Taxis
+                    option(value="Coasters") Coasters
+                    option(value="Bod bodas") Boda bodas
+            //- div
+            //-    label(for='phone') Phone Number
+            //-    input#phone(name='phone' type='text' placeholder='')
+            //-    span#phoneError.organize 
+
+            div
+              label(for='phone') Phone Number
+              input#phonenumber(name='phone' type='text' placeholder='+256')
+              span#phoneError.organize
+             
+            div
+              label(for='date') Date
+              input#dater(name='date' type='date' placeholder='')
+              span#dateError.organize 
+            
+          div
+            div
+              label(for='arrivalTime') Arrival Time
+              input#arrivaTime(name='arrivalTime' type='time' placeholder='')
+              span#arrivalTimeError.organize 
+
+            div
+              label(for='receiptnumber') Receipt Number
+              input#receiptnumber(name='receiptnumber' type='receipt' placeholder='')
+              span#receiptnumberError.organize  
+            div
+              label(for='exitTime') Exit Time
+              input#exitTime(name='exitTime' type='time' placeholder='')
+              span#exitTimeError.organize
+            div
+              label(for='amount') Amount
+              input#amount(name='amount' type='number' placeholder='')
+              span#amountError.organize
+
+            div
+              label(for='gender') Gender
+              input#gender(name='gender' type='text' placeholder='')
+              span#genderError.organize
+             
+
+
+            div
+              label(for='password') Enter Password
+              input#password(type='password' name='password' placeholder='@Brian1998')
+              span#password-error.organize
+              
+
+
+
+
+          button.btn.btn--form(type='submit') Sign up
+          //- a.btn.btn--outline(href='loginPage.html') Login &darr; 
+          // &darr;
+      .cta-img-box(role='img' aria-label='Woman enjoying food')
+
+
+script(src='../js/registervalidation.js')
+

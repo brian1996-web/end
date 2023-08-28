@@ -1,8 +1,9 @@
 .delivered-meals {
-  margin-top: 8rem;
+  margin-top: -25rem;
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  margin-bottom: -9rem;
 }
 .delivered-imgs {
   display: flex;
